@@ -1,0 +1,33 @@
+﻿Roulette Dealer FInder by Time and Game
+
+
+
+
+
+
+
+
+
+
+#!/bin/bash
+
+
+if [ $4 = "Texas" ];
+then 
+        first=7;
+        last=8;
+elif [ $4 = "BlackJack" ];
+then 
+        first=3;
+        last=4;
+elif [ $4 = "Roulette" ];
+then 
+        first=5
+        last=6
+else 
+        first=5
+        last=6
+fi
+
+
+cat $1_Dealer_schedule | awk -v c1=$first -v c2=$last -F" " '{print $1, $2, $c1, $c2}' | grep $2 | grep -i $3
