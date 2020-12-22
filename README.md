@@ -10,4 +10,4 @@ In the "Diagrams" folder there are two screenshots of Network Diagrams. The one 
 
 In the folder labeled "Ansible" you will find three ansible playbook files that we used in an ansible container we created. One configures the Docker application the other two were used to install and configure the Filebeat and Metricbeat applications.
 
-Finally, in the ELK Deployment README.md you will find a comprehensive descripton of the steps and details of our ELK deployment.
+Finally, in the README ELK Deployment you will find a comprehensive descripton of the steps and details of our ELK deployment.
